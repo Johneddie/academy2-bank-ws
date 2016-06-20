@@ -59,4 +59,6 @@ public class BankingRestService {
 	public void setBankingApplicationService(BankingApplicationService bankingApplicationService) {
 		this.bankingApplicationService = bankingApplicationService;
 	}
+	
+	//comentario2
 }
