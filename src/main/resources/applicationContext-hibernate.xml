@@ -29,9 +29,9 @@
 
 		<property name="mappingResources">
 			<list>
-				<value>classpath:customer.hbm.xml
+				<value>customer.hbm.xml
 				</value>
-				<value>classpath:bankAccount.hbm.xml
+				<value>bankAccount.hbm.xml
 				</value>
 			</list>
 		</property>
