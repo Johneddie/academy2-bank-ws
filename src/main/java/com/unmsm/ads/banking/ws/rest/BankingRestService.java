@@ -49,7 +49,7 @@ public class BankingRestService {
 	@GET
 	@Path("/{param}")
 	public Response getPing(@PathParam("param") String msg) {
-		String output = "Jersey say : " + msg;
+		String output = "John say : " + msg;
 		return Response.status(200).entity(output).build();
 	}
 	
