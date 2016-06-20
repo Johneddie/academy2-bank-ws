@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+ 
+<configuration>
+    <typeAliases>
+        <typeAlias alias="BankAccount" type="com.unmsm.ads.banking.domain.entities.BankAccount"/>  
+        <typeAlias alias="Customer" type="com.unmsm.ads.banking.domain.entities.Customer"/>        
+    </typeAliases>
+ 
+    <environments default="development">
+        <environment id="development">
+          <transactionManager type="JDBC"/>
+            <!--  connecting to Local MySql -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+                <property name="url" value="jdbc:sqlserver://localhost:1433;databaseName=banking;"/>
+                <property name="username" value="JohnEddie"/>
+                <property name="password" value="JohnEddie"/>
+            </dataSource>
+       </environment>
+    </environments>
+    <mappers>
+       <mapper resource="BankAccount.xml"/>
+       <mapper resource="Customer.xml"/>
+    </mappers>
+</configuration>

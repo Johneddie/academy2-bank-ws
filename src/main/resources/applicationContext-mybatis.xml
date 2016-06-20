@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.3.xsd" 
+	>
+	<bean id="transferDomainService" class="com.unmsm.ads.banking.domain.services.TransferDomainService"></bean>
+	<bean id="unitOfWork" class="com.unmsm.ads.banking.infrastructure.repository.mybatis.dao.UnitOfWork"></bean>
+
+	<bean id="bankingApplicationService" class="com.unmsm.ads.banking.application.BankingApplicationService">
+		<constructor-arg ref="unitOfWork" />
+		<constructor-arg ref="transferDomainService" />
+	</bean>
+
+</beans>

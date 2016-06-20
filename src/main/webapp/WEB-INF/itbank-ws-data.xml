@@ -8,8 +8,8 @@
 						http://www.springframework.org/schema/jee
 						http://www.springframework.org/schema/jee/spring-jee.xsd">
 						
-	<import resource="classpath:applicationContext-hibernate.xml"/>					
- 	<import resource="classpath:applicationContext.xml"/>
+	<import resource="classpath:applicationContext-mybatis.xml"/>					
+
  	
 						
 </beans>
