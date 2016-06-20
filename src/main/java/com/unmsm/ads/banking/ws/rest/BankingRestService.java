@@ -13,7 +13,8 @@ import com.unmsm.ads.banking.ws.bean.ResponseBean;
 import com.unmsm.ads.banking.ws.bean.TransferBean;
 
 import static com.unmsm.ads.banking.ws.util.Constantes.*;
- 
+
+//comentario1 
 
 @Path("/api/bank/service")
 public class BankingRestService {
