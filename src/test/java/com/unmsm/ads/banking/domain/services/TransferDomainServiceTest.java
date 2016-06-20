@@ -44,7 +44,7 @@ public class TransferDomainServiceTest {
 		BankAccount destinationBankAccount = createAccount("456", new BigDecimal(10));
 		transferDomainService.performTransfer(originBankAccount, destinationBankAccount, new BigDecimal(10));
 		assertEquals("90", originBankAccount.getBalance().toPlainString());
-		assertEquals("20", destinationBankAccount.getBalance().toPlainString());
+		assertEquals("40", destinationBankAccount.getBalance().toPlainString());
 	}
 
 	@Test(expected = SameTransferBankAccountException.class)
