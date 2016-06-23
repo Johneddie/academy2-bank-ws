@@ -61,5 +61,4 @@ public class BankingRestService {
 		this.bankingApplicationService = bankingApplicationService;
 	}
 	
-	//comentario2
 }
