@@ -50,7 +50,7 @@ public class BankingRestService {
 	@GET
 	@Path("/{param}")
 	public Response getPing(@PathParam("param") String msg) {
-		String output = "John say : " + msg;
+		String output = "John say2 : " + msg;
 		return Response.status(200).entity(output).build();
 	}
 	
